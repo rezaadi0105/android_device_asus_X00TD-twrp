@@ -99,5 +99,5 @@ TW_INCLUDE_NTFS_3G := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_MAX_BRIGHTNESS := 200
 TW_DEFAULT_BRIGHTNESS := 120
-TW_THEME := portrait_hdpi
+TW_THEME := portrait_mdpi
 TW_SCREEN_BLANK_ON_BOOT := true
