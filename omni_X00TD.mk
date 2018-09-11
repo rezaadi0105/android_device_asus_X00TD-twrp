@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := ASUS_X00TD
+PRODUCT_RELEASE_NAME := X00TD
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,8 +23,8 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ASUS_X00TD
-PRODUCT_NAME := omni_ASUS_X00TD
+PRODUCT_DEVICE := X00TD
+PRODUCT_NAME := omni_X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
