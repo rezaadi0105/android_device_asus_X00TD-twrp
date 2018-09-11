@@ -59,7 +59,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 #TARGET_KERNEL_HEADER_ARCH := arm64
 #TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 #TARGET_KERNEL_CONFIG := X00TD_defconfig
-TARGET_PREBUILT_KERNEL := device/asus/ASUS_X00TD/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/asus/X00TD/prebuilt/Image.gz-dtb
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
@@ -82,6 +82,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -101,3 +102,12 @@ TW_MAX_BRIGHTNESS := 200
 TW_DEFAULT_BRIGHTNESS := 120
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
+
+# exFAT FS Support
+TW_INCLUDE_FUSE_EXFAT := true
+
+# NTFS Support
+TW_INCLUDE_FUSE_NTFS := true
+
+#Official
+PB_OFFICIAL := true
